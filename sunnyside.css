@@ -1,0 +1,758 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  position: relative;
+  width: 1440px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section .hero-text {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+}
+
+.hero-text h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: white;
+  font-size: 59px;
+  letter-spacing: 11.2px;
+  margin-top: 0%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  padding-top: 40px;
+}
+
+.menu-layout {
+  display: flex;
+}
+
+.hero-text img {
+  margin-left: 48%;
+  margin-top: 80px;
+}
+
+.img-mobile {
+  display: none;
+}
+
+.img-desktop {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin-top: 6%;
+}
+
+.menu {
+  margin-left: 150%;
+  display: flex;
+}
+
+a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.navbar .menu-layout .menu .btn {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 16px 28px;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #23303e;
+  background-color: white;
+  margin-top: 1.6%;
+  margin-left: 6%;
+}
+
+.logo {
+  margin-left: 4%;
+  width: 10rem;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.gallery-section .img-mobile {
+  display: none;
+}
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 0;
+  background-color: #90d4c5;
+}
+
+footer .logo {
+  width: 16.2rem;
+  justify-content: center;
+  align-items: center;
+  -webkit-filter: brightness(0) invert(39%) sepia(67%) saturate(323%)
+    hue-rotate(118deg) brightness(90%) contrast(90%);
+  filter: brightness(0) invert(39%) sepia(67%) saturate(323%) hue-rotate(118deg)
+    brightness(90%) contrast(90%);
+}
+
+footer .footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+footer .footer-menu a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #458c7e;
+  padding: 20px;
+}
+
+footer .footer-menu a:hover {
+  color: white;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  list-style: none;
+  margin-left: 3.7%;
+}
+
+footer .social-media a img:hover {
+  -webkit-filter: brightness(0) invert(100%);
+  filter: brightness(0) invert(100%);
+}
+
+.container .section1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .img-mobile2 {
+  display: none;
+}
+
+.container .img-mobile1 {
+  display: none;
+}
+
+.container .img-desktop {
+  display: block;
+}
+.container .section1 {
+  flex: 50%;
+  align-items: flex-start;
+}
+.container .section1 .title {
+  font-size: 2.9rem;
+  text-align: left;
+  margin-top: 30%;
+}
+.container .section1 .description {
+  text-align: left;
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+  margin-right: 6.8%;
+  text-align: left;
+}
+.container .section1 {
+  padding: 0 7.5rem 0 8rem;
+}
+
+.client-testimonials {
+  padding: 6.4rem 2rem 2rem;
+}
+
+.client-testimonials h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #818498;
+}
+
+.client-testimonials .clients-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.client-testimonials .clients-wrapper .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  width: 25.5%;
+  padding: 4rem 0;
+}
+.client-testimonials .clients-wrapper .client .testimonial {
+  padding: 5.4rem 0 7rem 0;
+}
+
+.client-testimonials .clients-wrapper .client img {
+  width: 22%;
+  border-radius: 50%;
+}
+
+.client-testimonials .clients-wrapper .client .testimonial {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 3.4rem 0 3.1rem 0;
+  line-height: 2.6rem;
+  color: #818498;
+}
+
+.client-testimonials .clients-wrapper .client .name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #23303e;
+}
+
+.client-testimonials .clients-wrapper .client .position {
+  font-size: 1rem;
+  color: #a7abae;
+  padding: 1rem 0;
+}
+
+.client-testimonials .clients-wrapper .client .position1 {
+  font-size: 1rem;
+  color: #a7abae;
+  padding: 1rem 0;
+}
+
+.container .text-block {
+  position: relative;
+}
+
+.container .text-block .title {
+  font-size: 2.7rem;
+  text-align: left;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.container .text-block .title1 {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-left: 13.5%;
+  margin-top: 20%;
+}
+
+.container .text-block .description {
+  text-align: left;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin: 0 0 0;
+  color: #818498;
+  position: absolute;
+  top: 49%;
+}
+
+.container .text-block .description1 {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  margin: 0 0 0;
+  color: #818498;
+  margin-top: 5.5%;
+  margin-left: 13.5%;
+  margin-right: 25%;
+}
+
+.container .text-block .btn-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 71%;
+}
+
+.container .text-block .btn-wrapper2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  left: 12.5%;
+  top: 70%;
+}
+
+.container .text-block .btn-wrapper a {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #23303e;
+  padding: 0 0.45rem;
+}
+
+.container .text-block .btn2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #23303e;
+  padding: 0 0.45rem;
+}
+
+.container .text-block .btn-wrapper .link-decoration {
+  position: relative;
+  width: 99%;
+  height: 0.5rem;
+  -webkit-transform: translateY(-0.7rem);
+  transform: translateY(-0.5rem);
+  z-index: -1;
+  border-radius: 0.5rem;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container .text-block .btn-wrapper2 .link-decoration {
+  position: relative;
+  width: 99%;
+  height: 0.5rem;
+  -webkit-transform: translateY(-0.7rem);
+  transform: translateY(-0.5rem);
+  z-index: -1;
+  border-radius: 0.5rem;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container .text-block .btn-wrapper .yellow {
+  background-color: #fad400;
+}
+
+.container .text-block .btn-wrapper2 .red {
+  background-color: #fe7867;
+}
+
+.container .text-block .btn-wrapper:hover .link-decoration {
+  width: 105%;
+  opacity: 1;
+}
+
+.container .text-block .btn-wrapper2:hover .link-decoration {
+  width: 105%;
+  opacity: 1;
+}
+
+.container .block-wrapper {
+  position: relative;
+}
+
+.container .block-wrapper .text-block-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 64%;
+  padding: 0 2rem;
+}
+
+.container .block-wrapper .text-block-overlay .titel {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.container .block-wrapper .text-block-overlay .description {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2.2rem;
+  margin: 1.9rem 0;
+}
+
+.text-block-overlay {
+  margin: 0 9.6rem;
+}
+
+.container .block-wrapper .text-block-overlay .green-tint {
+  color: #25564b;
+}
+
+.container .block-wrapper .text-block-overlay .blue-tint {
+  color: #19536b;
+}
+
+/*
+@media screen and (max-width: 375px) {
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-section .img-desktop {
+    display: none;
+  }
+
+  .hero-section .img-mobile {
+    display: block;
+  }
+
+  .hero-section .hero-text {
+    top: 26%;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 3.4rem;
+    margin-right: 59%;
+    margin-left: 11%;
+  }
+  .hero-section .hero-text img {
+    position: absolute;
+    right: 72%;
+    top: 77%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 30%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 3.2rem 2.5rem;
+  }
+
+  .navbar .menu-layout {
+    display: none;
+  }
+
+  .navbar .hide {
+    opacity: 0.5;
+  }
+
+  .navbar .hamburger {
+    display: block;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 155%;
+  }
+
+  .navbar .menu-mobile {
+    position: absolute;
+    top: 6.5rem;
+    left: 82%;
+    width: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .navbar .menu-mobile .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 2.3rem solid white;
+    border-left: 2.3rem solid transparent;
+  }
+
+  .navbar .menu-mobile .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 187%;
+    background-color: white;
+    padding: 3.6rem 0;
+  }
+
+  .navbar .menu-mobile .menu ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 3.3rem;
+  }
+
+  .navbar .menu-mobile .menu ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #818498;
+  }
+
+  .navbar .menu-mobile .menu ul li a:hover {
+    color: #5a636c;
+  }
+
+  .navbar .menu-mobile .menu .btn {
+    font-family: "Fraunces", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    background-color: #fad400;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #23303e;
+  }
+
+
+  .container {
+    display: block;
+  }
+
+  .container .img-mobile1 {
+    display: block;
+  }
+
+  .container .img-mobile2 {
+    display: none;
+  }
+
+  .container .img-desktop1 {
+    display: none;
+  }
+
+  .container .img-desktop {
+    display: none;
+  }
+
+  .container .img-mobile {
+    display: inline-block;
+  }
+
+  .container .text-block .section1 {
+    display: block;
+  }
+
+  .container .text-block .title {
+    font-size: 2.8rem;
+    text-align: left;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin-right: 9%;
+  }
+
+  .container .text-block .title1 {
+    font-size: 2.5rem;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin-left: 13.5%;
+    margin-top: 20%;
+  }
+
+  .container .text-block .description {
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin: 0 0 0;
+    color: #818498;
+  }
+
+  .gallery-section .img-desktop {
+    display: none;
+  }
+
+  .gallery-section .img-mobile {
+    display: block;
+  }
+
+  .gallery-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+  }
+
+  .client-testimonials {
+    padding: 6.4rem 2rem 2rem;
+  }
+
+  .client-testimonials h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    width: 38.7%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #818498;
+    margin-right: 90%;
+    padding-left: 5%;
+  }
+
+  .client-testimonials .clients-wrapper {
+    display: block;
+    gap: 2.8rem;
+  }
+
+  .client-testimonials .clients-wrapper .client {
+    display: block;
+  }
+
+  .client-testimonials .clients-wrapper .client img {
+    width: 22%;
+    border-radius: 50%;
+    margin-left: 66%;
+  }
+
+  .client-testimonials .clients-wrapper .client .testimonial {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    color: #818498;
+    margin-left: 20%;
+    width: 112%;
+  }
+
+  .client-testimonials .clients-wrapper .client .name {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #23303e;
+    margin-left: 60%;
+  }
+
+  .client-testimonials .clients-wrapper .client .position {
+    font-size: 1rem;
+    color: #a7abae;
+    padding: 1rem 0;
+    margin-left: 53%;
+  }
+
+  .client-testimonials .clients-wrapper .client .position1 {
+    font-size: 1rem;
+    color: #a7abae;
+    padding: 1rem 0;
+    margin-left: 58%;
+  }
+
+  .container .block-wrapper {
+    position: relative;
+  }
+
+  .container .block-wrapper .text-block-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 64%;
+    padding: 0 2rem;
+  }
+
+  .container .block-wrapper .text-block-overlay .titel {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 2.3rem;
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .container .block-wrapper .text-block-overlay .description {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin: 1.7rem 0;
+  }
+
+  .text-block-overlay {
+    margin: 0 9.6rem;
+  }
+}
+
+*/
